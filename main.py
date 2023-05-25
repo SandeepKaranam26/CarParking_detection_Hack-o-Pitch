@@ -3,6 +3,7 @@ import pickle
 import cvzone
 import numpy as np
 
+
 # Video feed
 cap = cv2.VideoCapture('carPark.mp4')
 
@@ -17,6 +18,7 @@ def checkParkingSpace(imgPro):
 
     for pos in posList:
         x, y = pos
+
 
         imgCrop = imgPro[y:y + height, x:x + width]
         # cv2.imshow(str(x * y), imgCrop)
